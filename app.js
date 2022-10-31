@@ -26,7 +26,9 @@ function createList() {
     .sort((a, b) => a.sort - b.sort)
     .map((a) => a.value)
     .forEach((person, index) => {
+
       const listItem = document.createElement('li');
+    
       listItem.setAttribute('data-index', index);
       listItem.innerHTML = `
             <span class="number">${index + 1}</span>
